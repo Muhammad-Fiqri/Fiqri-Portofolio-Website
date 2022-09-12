@@ -1,0 +1,329 @@
+/* navigation section */
+
+.nav
+{
+    /*Center the navigation p*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    z-index: 5;
+}
+
+.nav > p
+{
+    /*structure it look like a Nav*/
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav > p:hover
+{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: blue;
+}
+
+/* game dev section*/
+
+.game-dev-div
+{
+    /*background-image: url("Game-Dev-BG.jpg");*/
+    background-size: 100%;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.game-dev-div > h2
+{
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+}
+
+.split-container
+{
+    background-color: lightblue;
+    box-shadow: 5px 5px 10px 10px gray;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.container-left
+{
+    padding: 25px;
+    padding-right: 30px;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.container-left #title
+{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.container-left #desc
+{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-left > #godot-logo-background > img
+{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-left > #godot-logo-background
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 100%;
+}
+
+.container-left > #godot-logo-background:hover
+{
+    animation: shake 0.5s;
+}
+
+@keyframes shake
+{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*Container Right*/
+
+.container-right
+{
+    padding: 25px;
+    padding-left: 30px;
+}
+
+.container-right > #slide-1
+{
+    width: 100%;
+    height: 500px;
+    animation: fade 0.5s;
+}
+
+.container-right > #slides > *
+{
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    animation: fade 0.5s;
+}
+
+#slide-2, #slide-3, #slide-4
+{
+    display: none;
+}
+
+@keyframes fade 
+{
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+.container-right > #prev
+{
+    width: 50px;
+    height: 70px;
+    display: block;
+    position: relative;
+    float: left;
+    bottom: calc(50% - 70px / 2);
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    opacity: 50%;
+    transition-duration: 0.5s;
+}
+
+.container-right > #prev:hover
+{
+    opacity: 100%;
+}
+
+.container-right > #next
+{
+    width: 50px;
+    height: 70px;
+    display: block;
+    position: relative;
+    float: right;
+    bottom: calc(50% - 70px / 2);
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    opacity: 50%;
+    transition-duration: 0.5s;
+}
+
+.container-right > #next:hover
+{
+    opacity: 100%;
+}
+
+.container-right > .dots
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+
+.container-right > .dots > #dot-1, #dot-2, #dot-3, #dot-4
+{
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container-right > .dots > #dot-2, #dot-3, #dot-4
+{
+    opacity: 50%;
+}
+
+.container-right > #game-description
+{
+    font-size: 50px;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    text-align: center;
+}
+
+
+/* godot skill level down here */
+
+#godot-header
+{
+    padding-top: 100px;
+}
+
+#godot-skill-level
+{
+    width: 100%s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slide_fade
+{
+    from {
+        position: relative;
+        right: 100px;
+        opacity: 0.5;
+    }
+    to {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+#godot-logo-skill
+{
+    width: 20%;
+    padding: 5%;
+}
+
+#skill-level-indicator
+{
+    width: 50%;
+    background-color: rgb(0, 217, 255);
+    display: flex;
+    justify-content: center;
+
+}
+
+#skill-level-indicator > #level-1, #level-2, #level-3, #level-4, #level-5
+{
+    flex-grow: 1;
+    width: 100px;
+    height: 100%;
+    border: 2.5px solid blue;
+}
+
+@keyframes star-pop-up
+{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+#skill-level-indicator > #level-5 > .star-level
+{
+    visibility: hidden;
+}
+
+.star-level
+{
+    width: 100%;
+    height: 100%;
+}
+
+#godot-skill-level > p
+{
+    text-align: center;
+    width: 20%;
+    font-size: 100px;
+}

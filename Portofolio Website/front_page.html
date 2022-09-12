@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="Muhammad Fiqri, Web Developer, Front-End, Portofolio">
+        <meta name="author" content="Muhammad Fiqri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+        <link href='https://css.gg/chevron-right.css' rel='stylesheet'>
+        <link href='https://css.gg/chevron-left.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+        <link rel="icon" href="icon.png">
+
+        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="My-Work.css">
+        <script src="jquery-3.6.1.js"></script>
+        <script type="text/javascript" src="front_page_js.js"></script>
+
+        <title>Muhammad Fiqri Personal Site</title>
+    </head>
+    <body>
+        <div class="intro">
+            <h1> Welcome to my website, I'm <span>Muhammad Fiqri</span>.</h1>
+            <p>I'm a Front-end web developer.</p>
+            <div class="scroll-down-div">
+                <button type="button" onclick="scrollDown()">Scroll Down<i class="gg-arrow-down"></i></button>
+            </div>
+        </div>
+        <div class="my-works">
+            <nav class="nav">
+                <p onclick="GoHome()">HOME</p>
+                <p onclick="GoMyWorks()">MY WORKS</p>
+                <p>CONTACTS</p>
+                <p>ABOUT</p>
+            </nav>
+            <div class="game-dev-div">
+                <h2>Game Development</h2>
+
+                <div class="split-container">
+                    <div class="container-left">
+                        <p id="title">Godot Game Engine</p>
+                        <div id="godot-logo-background">
+                            <img src="Images/godot.png">
+                        </div>
+                        <p id="desc">Develop a story or a fun experiences with me</p>
+                    </div>
+
+                    <div class="container-right">
+                        <div id="slides">
+                            <video controls autoplay loop id="slide-1" src="Wide Putin Videos.mp4"></video>
+                            <img id="slide-2" src="wide putin game.png">
+                            <img id="slide-3" src="just survive bro game.png">
+                            <img id="slide-4" src="Kfalkenhagen Game.png">
+                        </div>
+                        <button onclick="changeSlide(-1)" id="prev"><i class="gg-chevron-left"></i></button>
+                        <button onclick="changeSlide(1)" id="next"><i class="gg-chevron-right"></i></button>
+                        <div class="dots">
+                            <div id="dot-1" onclick="goToSlide(1)"></div>
+                            <div id="dot-2" onclick="goToSlide(2)"></div>
+                            <div id="dot-3" onclick="goToSlide(3)"></div>
+                            <div id="dot-4" onclick="goToSlide(4)"></div>
+                        </div>
+                        <p id="game-description">Wide Walking</p>
+                    </div>
+                </div>
+
+                <h2 id="godot-header">My Godot Skill Level</h2>
+                        <div id="godot-skill-level">
+                            <img id="godot-logo-skill" src="Images/godot.png">
+                            <div id="skill-level-indicator">
+                                <div id="level-1"><img class="star-level" src="Images/star level.png"></div>
+                                <div id="level-2"><img class="star-level" src="Images/star level.png"></div>
+                                <div id="level-3"><img class="star-level" src="Images/star level.png"></div>
+                                <div id="level-4"><img class="star-level" src="Images/star level.png"></div>
+                                <div id="level-5"><img class="star-level" src="Images/star level.png"></div>
+                            </div>
+                            <p>4/5</p>
+                        </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
